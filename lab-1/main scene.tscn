@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://b00kfen2e2r2p"]
+
+[ext_resource type="Texture2D" uid="uid://cqmls4w0w1dfa" path="res://Assets/cat3.png" id="1_1vcls"]
+[ext_resource type="Texture2D" uid="uid://dyq0kt24mthk6" path="res://Assets/cat.png" id="2_xkavy"]
+[ext_resource type="PackedScene" uid="uid://bbq01grcb0m2q" path="res://hay_hay.tscn" id="3_0a2kf"]
+
+[node name="Cat3" type="Sprite2D"]
+position = Vector2(503, 325)
+scale = Vector2(0.131667, 0.131667)
+texture = ExtResource("1_1vcls")
+
+[node name="Cat" type="Sprite2D" parent="."]
+position = Vector2(1435.44, 455.696)
+scale = Vector2(2.38909, 2.38909)
+texture = ExtResource("2_xkavy")
+
+[node name="HayHay" parent="." instance=ExtResource("3_0a2kf")]
+position = Vector2(-2225.32, 569.62)
+rotation = 0.0872665
+scale = Vector2(7, 7)
+
+[node name="HayHay2" parent="." instance=ExtResource("3_0a2kf")]
+position = Vector2(3053.16, -1693.67)
+rotation = 0.0872665
+scale = Vector2(7, 7)
+
+[node name="HayHay3" parent="." instance=ExtResource("3_0a2kf")]
+position = Vector2(3288.61, 744.304)
+rotation = 0.0872665
+scale = Vector2(7, 7)
+
+[node name="HayHay4" parent="." instance=ExtResource("3_0a2kf")]
+position = Vector2(-1465.82, -1769.62)
+rotation = 0.0872665
+scale = Vector2(7, 7)

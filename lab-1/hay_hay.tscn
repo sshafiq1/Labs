@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbq01grcb0m2q"]
+
+[ext_resource type="Texture2D" uid="uid://cuk3nyj1uop4r" path="res://Assets/hay.png" id="1_aqlvy"]
+
+[node name="HayHay" type="Node2D"]
+position = Vector2(-2, 1)
+
+[node name="Hay" type="Sprite2D" parent="."]
+position = Vector2(92, 57)
+scale = Vector2(0.222416, 0.222416)
+texture = ExtResource("1_aqlvy")
+
+[node name="Hay" type="Sprite2D" parent="Hay"]
+position = Vector2(-605.159, 293.931)
+scale = Vector2(1.23928, 1.23928)
+texture = ExtResource("1_aqlvy")
+
+[node name="Hay" type="Sprite2D" parent="Hay/Hay"]
+position = Vector2(168.587, -415.382)
+rotation = 0.0523599
+scale = Vector2(0.91836, 0.924056)
+texture = ExtResource("1_aqlvy")
