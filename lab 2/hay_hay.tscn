@@ -7,7 +7,7 @@ position = Vector2(-2, 1)
 
 [node name="Hay" type="Sprite2D" parent="."]
 position = Vector2(92, 57)
-scale = Vector2(0.222416, 0.222416)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_aqlvy")
 
 [node name="Hay" type="Sprite2D" parent="Hay"]
