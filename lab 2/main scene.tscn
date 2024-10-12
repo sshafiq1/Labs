@@ -4,10 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://bbq01grcb0m2q" path="res://hay_hay.tscn" id="3_0a2kf"]
 [ext_resource type="PackedScene" uid="uid://bir26rj6swqa5" path="res://mouse.tscn" id="3_2q785"]
 
-[node name="Cat3" type="Sprite2D"]
-position = Vector2(588, 331)
+[node name="Level 1" type="Node2D"]
+position = Vector2(585, 319)
 scale = Vector2(0.131667, 0.131667)
-texture = ExtResource("2_xkavy")
 
 [node name="HayHay" parent="." instance=ExtResource("3_0a2kf")]
 position = Vector2(2437.97, 508.86)
@@ -19,15 +18,6 @@ position = Vector2(1488.6, -1572.15)
 rotation = 0.0872665
 scale = Vector2(7, 7)
 
-[node name="Mouse4" parent="." instance=ExtResource("3_2q785")]
-position = Vector2(-1625.31, 296.202)
-
-[node name="Mouse3" parent="." instance=ExtResource("3_2q785")]
-position = Vector2(2756.96, 1944.3)
-
-[node name="Mouse2" parent="." instance=ExtResource("3_2q785")]
-position = Vector2(3410.12, -1670.88)
-
 [node name="HayHay4" parent="." instance=ExtResource("3_0a2kf")]
 position = Vector2(-2749.36, -782.276)
 rotation = 0.0872665
@@ -35,3 +25,15 @@ scale = Vector2(7, 7)
 
 [node name="Mouse" parent="." instance=ExtResource("3_2q785")]
 position = Vector2(-3448.09, 1777.21)
+
+[node name="Mouse2" parent="." instance=ExtResource("3_2q785")]
+position = Vector2(3410.12, -1670.88)
+
+[node name="Mouse3" parent="." instance=ExtResource("3_2q785")]
+position = Vector2(2756.96, 1944.3)
+
+[node name="Mouse4" parent="." instance=ExtResource("3_2q785")]
+position = Vector2(-1625.31, 296.202)
+
+[node name="Cat" type="Sprite2D" parent="."]
+texture = ExtResource("2_xkavy")

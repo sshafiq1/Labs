@@ -2,8 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://cuk3nyj1uop4r" path="res://Assets/hay.png" id="1_aqlvy"]
 
-[node name="HayHay" type="Node2D"]
+[node name="HayHay" type="Sprite2D"]
 position = Vector2(-2, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(12.7535, 12.8313)
+rotation = 0.0523599
+scale = Vector2(0.227621, 0.229033)
+polygon = PackedVector2Array(-416.551, -161.198, -398.156, 187.618, -638.094, 309.42, -610.926, 657.779, -223.736, 825.616, -218.659, 838.468, -96.7353, 814.629, 233.073, 478.282, 357.065, 493.685, 722.891, 172.951, 734.729, -103.113, 433.637, -139.897, 434.594, -288.601, 97.2544, -345.358)
 
 [node name="Hay" type="Sprite2D" parent="."]
 position = Vector2(92, 57)
