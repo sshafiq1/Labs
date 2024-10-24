@@ -36,4 +36,5 @@ position = Vector2(2756.96, 1944.3)
 position = Vector2(-1625.31, 296.202)
 
 [node name="Cat" type="Sprite2D" parent="."]
+position = Vector2(-53.1644, -7.59491)
 texture = ExtResource("2_xkavy")
