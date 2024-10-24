@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://b00kfen2e2r2p"]
+
+[ext_resource type="PackedScene" uid="uid://bbq01grcb0m2q" path="res://Scenes/hay_hay.tscn" id="1_vvijk"]
+[ext_resource type="PackedScene" uid="uid://bir26rj6swqa5" path="res://Scenes/mouse.tscn" id="2_sg7ko"]
+[ext_resource type="Texture2D" uid="uid://dyq0kt24mthk6" path="res://Assets/cat.png" id="3_hl3u4"]
+
+[node name="Level 1" type="Node2D"]
+position = Vector2(585, 319)
+scale = Vector2(0.131667, 0.131667)
+
+[node name="HayHay" parent="." instance=ExtResource("1_vvijk")]
+position = Vector2(2437.97, 508.86)
+rotation = 0.0872665
+scale = Vector2(7, 7)
+
+[node name="HayHay2" parent="." instance=ExtResource("1_vvijk")]
+position = Vector2(1488.6, -1572.15)
+rotation = 0.0872665
+scale = Vector2(7, 7)
+
+[node name="HayHay4" parent="." instance=ExtResource("1_vvijk")]
+position = Vector2(-2749.36, -782.276)
+rotation = 0.0872665
+scale = Vector2(7, 7)
+
+[node name="Mouse" parent="." instance=ExtResource("2_sg7ko")]
+position = Vector2(-3448.09, 1777.21)
+
+[node name="Mouse2" parent="." instance=ExtResource("2_sg7ko")]
+position = Vector2(3410.12, -1670.88)
+
+[node name="Mouse3" parent="." instance=ExtResource("2_sg7ko")]
+position = Vector2(2756.96, 1944.3)
+
+[node name="Mouse4" parent="." instance=ExtResource("2_sg7ko")]
+position = Vector2(-1625.31, 296.202)
+
+[node name="Cat" type="Sprite2D" parent="."]
+position = Vector2(-53.1644, -7.59491)
+texture = ExtResource("3_hl3u4")
