@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b00kfen2e2r2p"]
+[gd_scene load_steps=5 format=3 uid="uid://b00kfen2e2r2p"]
 
 [ext_resource type="PackedScene" uid="uid://bbq01grcb0m2q" path="res://Scenes/hay_hay.tscn" id="1_vvijk"]
 [ext_resource type="PackedScene" uid="uid://bir26rj6swqa5" path="res://Scenes/mouse.tscn" id="2_sg7ko"]
 [ext_resource type="Texture2D" uid="uid://dyq0kt24mthk6" path="res://Assets/cat.png" id="3_hl3u4"]
+[ext_resource type="Script" path="res://Scripts/cat.gd" id="3_lpgy6"]
 
 [node name="Level 1" type="Node2D"]
 position = Vector2(585, 319)
@@ -35,6 +36,13 @@ position = Vector2(2756.96, 1944.3)
 [node name="Mouse4" parent="." instance=ExtResource("2_sg7ko")]
 position = Vector2(-1625.31, 296.202)
 
-[node name="Cat" type="Sprite2D" parent="."]
-position = Vector2(-53.1644, -7.59491)
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(-53.1646, -7.59497)
+script = ExtResource("3_lpgy6")
+
+[node name="Cat" type="Sprite2D" parent="CharacterBody2D"]
 texture = ExtResource("3_hl3u4")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+position = Vector2(53.1646, 7.59497)
+polygon = PackedVector2Array(-220.253, 91.1392, -121.519, 83.5442, -83.5444, -15.1897, -37.9746, -75.9492, -53.1646, -91.1389, -60.7598, -129.114, -68.3545, -205.063, -15.1899, -174.683, 15.1895, -189.873, 60.7593, -174.683, 106.329, -205.063, 106.329, -129.114, 106.329, -113.924, 83.5439, -60.7593, 98.7339, -22.7847, 91.1387, 7.59497, 98.7339, 45.5696, 98.7339, 113.924, 121.519, 144.303, 106.329, 151.898, 75.9487, 151.898, 60.7593, 144.303, 22.7847, 136.708, 30.3794, 159.493, 15.1895, 167.088, -22.7852, 167.088, -30.3799, 136.708, -68.3545, 136.708, -75.9492, 144.303, -106.329, 151.898, -121.519, 144.303, -106.329, 121.519, -121.519, 113.924, -189.873, 106.329, -220.253, 98.7339)
