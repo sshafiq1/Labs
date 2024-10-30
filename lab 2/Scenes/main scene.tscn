@@ -38,7 +38,9 @@ position = Vector2(-1625.31, 296.202)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(-53.1646, -7.59497)
+collision_layer = 2
 script = ExtResource("3_lpgy6")
+speed = 80.0
 
 [node name="Cat" type="Sprite2D" parent="CharacterBody2D"]
 texture = ExtResource("3_hl3u4")
